@@ -2,6 +2,9 @@
 title: "K8s Ingress"
 date: 2023-03-13T19:50:59+08:00
 draft: false
+
+tags: ["Kuberneters", "Ingress"]
+categories: ["Kuberneters"]
 ---
 
 
