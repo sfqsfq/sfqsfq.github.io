@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://example.com/"
+baseURL = "https://sfqsfq.github.io/"
 title = "Hugo 主题 MemE"
 languageCode = "zh-CN"
 hasCJKLanguage = true
@@ -16,6 +16,7 @@ newContentEditor = ""
 
 # i18n
 defaultContentLanguage = "zh"
+# defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 # 是否复数化列表页面的标题
@@ -154,7 +155,7 @@ uglyURLs = false
 [outputs]
     page = ["HTML"]
     # home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
-    home = ["HTML", "SectionsAtom", "SectionsRSS"]
+    home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex", "Algolia"]
     section = ["HTML"]
     taxonomy = ["HTML"]
     term = ["HTML"]
@@ -189,12 +190,12 @@ uglyURLs = false
 
 [menu]
     ## 菜单栏
-    # [[menu.main]]
-    #     pageref = "/"
-    #     name = "首页"
-    #     weight = 1
-    #     pre = "internal"
-    #     post = "home"
+    [[menu.main]]
+         pageref = "/"
+         name = "首页"
+         weight = 1
+         pre = "internal"
+         post = "home"
     [[menu.main]]
         pageref = "/posts/"
         name = "文章"
@@ -1381,7 +1382,7 @@ uglyURLs = false
 
     # 说明：需要开启 `SearchIndex` 的输出
 
-    enableLunrSearch = false
+    # enableLunrSearch = false
     # 说明：https://lunrjs.com/
 
 
@@ -1392,11 +1393,11 @@ uglyURLs = false
     #      次将生成的 algolia.json 文件上传到
     #      Algolia
 
-    enableAlgoliaSearch = false
+    enableAlgoliaSearch = true
 
-    algoliaAppId = ""
-    algoliaApiKey = ""
-    algoliaIndexName = ""
+    algoliaAppId = "OG013E6JMZ"
+    algoliaApiKey = "a5e9efa26bd1dbc189d941c7f987b0e3"
+    algoliaIndexName = "blog"
     # 说明：https://www.algolia.com/
 
 
@@ -1433,9 +1434,9 @@ uglyURLs = false
         katex_mhchem = "/npm/katex@0.13.0/dist/contrib/mhchem.min.js"
         katex_auto_render = "/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
         lunr = "/npm/lunr@2.3.9/lunr.min.js"
-        lunr_tinyseg = "/npm/lunr-languages@1.4.0/tinyseg.js"
-        lunr_stemmer = "/npm/lunr-languages@1.4.0/min/lunr.stemmer.support.min.js"
-        lunr_lang = "/npm/lunr-languages@1.4.0/min/lunr.de.min.js"
+        lunr_tinyseg = "/npm/lunr-languages@1.7.0/tinyseg.js"
+        lunr_stemmer = "/npm/lunr-languages@1.7.0/min/lunr.stemmer.support.min.js"
+        lunr_lang = "/npm/lunr-languages@1.7.0/min/lunr.zh.min.js"
         mathjax = "/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"
         medium_zoom = "/npm/medium-zoom@latest/dist/medium-zoom.min.js"
         mermaid = "/npm/mermaid@8.8.3/dist/mermaid.min.js"
@@ -1443,3 +1444,6 @@ uglyURLs = false
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"
         busuanzi = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         utterances = "https://utteranc.es/client.js"
+
+
+
