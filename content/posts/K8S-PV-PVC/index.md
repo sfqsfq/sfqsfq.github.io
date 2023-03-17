@@ -1,5 +1,5 @@
 ---
-title: "K8s_pv_pvc"
+title: "K8S PV PVC"
 date: 2023-03-16T17:11:22+08:00
 draft: false
 

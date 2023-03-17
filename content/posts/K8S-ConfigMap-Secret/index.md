@@ -1,5 +1,5 @@
 ---
-title: "K8s_configmap_secret"
+title: "K8S ConfigMap Secret"
 date: 2023-03-14T10:40:31+08:00
 draft: false
 
